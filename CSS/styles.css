@@ -27,11 +27,10 @@ h1, h2 {
     font-family: 'Lemonada', cursive;
     font-weight: 300;
     margin: 0;
-}ß
+}
 
 footer {
-    background: #004d40;
-    color: white;
+    background: #82ada9;
     text-align: center;
 }
 
@@ -42,5 +41,21 @@ footer {
 }
 
 .education {
-    background-color: #e5ffff;
+    background: #e5ffff;
+}
+.skills {
+    /*background: #e8eaff;*/
+}
+.work-experience {
+    background: #e8eaff;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+}
+.footer-item {
+    padding: 5px;
+    padding-top: 15px;
 }
