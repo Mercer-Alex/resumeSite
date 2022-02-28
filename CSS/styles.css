@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "My font";
+    src: url()
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family:
+}
+header {
+    background: cadetblue;
+
+}
+
+
+footer {
+    background: bisque;
+
+}
