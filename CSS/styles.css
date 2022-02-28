@@ -1,19 +1,46 @@
-@font-face {
-    font-family: "My font";
-    src: url()
+/*light color: e5ffff
+header: 82ada9
+normal: b2dfdb
+dark: 263238
+*/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 body {
     margin: 0;
     padding: 0;
-    font-family:
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.15;
 }
 header {
-    background: cadetblue;
-
+    background: #82ada9;
+    text-align: center;
 }
-
+h1 {
+    line-height: 1;
+}
+h1, h2 {
+    font-family: 'Lemonada', cursive;
+    font-weight: 300;
+    margin: 0;
+}ß
 
 footer {
-    background: bisque;
+    background: #004d40;
+    color: white;
+    text-align: center;
+}
 
+.content-wrap {
+    width: 900px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.education {
+    background-color: #e5ffff;
 }
