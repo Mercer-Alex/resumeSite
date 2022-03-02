@@ -3,6 +3,7 @@ header: 82ada9
 normal: b2dfdb
 dark: 263238
 */
+
 html {
     box-sizing: border-box;
 }
@@ -46,8 +47,6 @@ h3 {
 .education {
     background: #e5ffff;
 }
-
-
 .school-date {
     display: flex;
     justify-content: space-between;
@@ -68,14 +67,13 @@ h3 {
 .work-experience {
     background: #e8eaff;
 }
-.work-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr ;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 10px;
-}
 .work-item {
-    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+}
+.work-summary {
+    padding-top: 10px;
 }
 /*footer*/
 footer {
@@ -94,4 +92,7 @@ footer {
     color: #263238;
     text-decoration: none;
     padding: 10px;
+}
+.footer-item a:hover {
+    color: #b2dfdb;
 }
