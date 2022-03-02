@@ -2,6 +2,7 @@
 header: 82ada9
 normal: b2dfdb
 dark: 263238
+dash-lighter: b6b8c3
 */
 
 html {
@@ -38,10 +39,32 @@ h3 {
 .item-details h3 + p {
     font-style: italic;
 }
+.divider > section {
+    border-bottom: 1px dashed #b6b8c3;
+    padding: 25px 0;
+}
+.divider > section:last-of-type {
+    border-bottom: none;
+}
+
 .content-wrap {
-    width: 900px;
+    max-width: 900px;
+    width: 85%;
     margin: 0 auto;
     padding: 60px 0;
+}
+/*header*/
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+.header-item {
+    flex: 1 1 auto;
+}
+.header-item img {
+    width: 20rem;
 }
 /*education*/
 .education {
@@ -51,6 +74,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     border-bottom: dashed 1px;
+    align-items: center;
 }
 .school-date h3 ~ p {
     margin-bottom: 0;
@@ -96,3 +120,4 @@ footer {
 .footer-item a:hover {
     color: #b2dfdb;
 }
+
