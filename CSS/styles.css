@@ -21,6 +21,7 @@ body {
 header {
     background: #82ada9;
     text-align: center;
+
 }
 h1 {
     line-height: 1;
@@ -57,24 +58,26 @@ h3 {
 .header-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
-
 }
 .header-item {
     flex: 1 1 auto;
 }
 .header-item img {
-    width: 20rem;
+    max-width: 350px;
+    width: 85%;
 }
+
 /*education*/
 .education {
     background: #e5ffff;
 }
 .school-date {
     display: flex;
-    justify-content: space-between;
     border-bottom: dashed 1px;
     align-items: center;
+    flex-wrap: wrap;
 }
 .school-date h3 ~ p {
     margin-bottom: 0;
@@ -91,33 +94,43 @@ h3 {
 .work-experience {
     background: #e8eaff;
 }
-.work-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 10px;
-}
+
 .work-summary {
     padding-top: 10px;
 }
 /*footer*/
 footer {
     background: #82ada9;
-    text-align: center;
 }
 .footer-container {
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    justify-content: center;
+    justify-content: space-around;
 }
 .footer-item {
     padding-top: 15px;
 }
 .footer-item a {
     color: #263238;
-    text-decoration: none;
     padding: 10px;
 }
 .footer-item a:hover {
     color: #b2dfdb;
+}
+
+@media screen and (min-width:700px) {
+    footer {
+        text-align: center;
+    }
+
+    .work-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 10px;
+    }
+    .footer-container {
+        justify-content: center;
+    }
+
 }
 
