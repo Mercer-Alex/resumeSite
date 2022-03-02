@@ -28,6 +28,17 @@ h1, h2 {
     font-weight: 300;
     margin: 0;
 }
+h3 {
+    margin-bottom: 0;
+}
+h3 ~ p {
+    margin: 0;
+}
+
+h3 + p {
+    font-style: italic;
+}
+
 
 
 
@@ -43,6 +54,22 @@ h1, h2 {
     background: #e5ffff;
 }
 
+.education p {
+    margin: 0;
+}
+
+.school-date {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: dashed 1px;
+}
+
+.school-date p {
+    margin-top: auto;
+}
+
+
+
 
 /*skills*/
 
@@ -55,18 +82,7 @@ h1, h2 {
 .work-experience {
     background: #e8eaff;
 }
-.school {
-    /*border-bottom: solid 1px;*/
-}
-.school-date {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: dashed 1px;
-}
 
-.school-date h3, p {
-    margin-bottom: 0;
-}
 
 
 /*footer*/
