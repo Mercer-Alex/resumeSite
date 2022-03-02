@@ -29,10 +29,7 @@ h1, h2 {
     margin: 0;
 }
 
-footer {
-    background: #82ada9;
-    text-align: center;
-}
+
 
 .content-wrap {
     width: 900px;
@@ -40,14 +37,43 @@ footer {
     padding: 60px 0;
 }
 
+/*education*/
+
 .education {
     background: #e5ffff;
 }
+
+
+/*skills*/
+
 .skills {
     /*background: #e8eaff;*/
 }
+
+/*work experience*/
+
 .work-experience {
     background: #e8eaff;
+}
+.school {
+    /*border-bottom: solid 1px;*/
+}
+.school-date {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: dashed 1px;
+}
+
+.school-date h3, p {
+    margin-bottom: 0;
+}
+
+
+/*footer*/
+
+footer {
+    background: #82ada9;
+    text-align: center;
 }
 
 .footer-container {
@@ -56,6 +82,10 @@ footer {
     justify-content: center;
 }
 .footer-item {
-    padding: 5px;
     padding-top: 15px;
+}
+.footer-item a {
+    color: #263238;
+    text-decoration: none;
+    padding: 10px;
 }
