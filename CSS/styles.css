@@ -48,6 +48,10 @@ h3 {
     border-bottom: none;
 }
 
+.header-container + .header-item {
+    margin: auto;
+}
+
 .content-wrap {
     max-width: 900px;
     width: 85%;
@@ -56,18 +60,19 @@ h3 {
 }
 /*header*/
 .header-container {
-    max-width: 900px;
-    width: 85%;
     display: flex;
     flex-wrap: wrap;
-}
-.header-item {
-    padding: 10px;
-    flex:  1 0 350px;
+    justify-content: center;
 }
 .header-item img {
     max-width: 325px;
 }
+
+.header-item {
+    padding: 10px;
+    flex:  1 0 350px;
+}
+
 
 /*education*/
 .education {
@@ -102,7 +107,7 @@ footer {
 .footer-container {
     display: grid;
     grid-template-columns: repeat(3, 100px);
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .footer-item {
     padding-top: 15px;
@@ -139,8 +144,10 @@ footer {
     }
     .header-container {
         flex-wrap: nowrap;
-        justify-content: center;
-        margin: auto;
+        padding: 0;
+        align-items: center;
+    }
+    .header-item {
     }
 
 }
