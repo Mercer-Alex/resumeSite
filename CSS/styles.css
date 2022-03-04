@@ -21,7 +21,6 @@ body {
 header {
     background: #82ada9;
     justify-content: start;
-
 }
 h1 {
     line-height: 1;
@@ -47,11 +46,9 @@ h3 {
 .divider > section:last-of-type {
     border-bottom: none;
 }
-
 .header-container + .header-item {
     margin: auto;
 }
-
 .content-wrap {
     max-width: 900px;
     width: 85%;
@@ -70,7 +67,6 @@ h3 {
 
 .header-item {
     padding: 10px;
-    flex:  1 0 350px;
 }
 
 
@@ -120,7 +116,10 @@ footer {
     color: #b2dfdb;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 699px) {
+    .header-item {
+        flex: 1 0 350px;
+    }
 
 }
 @media screen and (min-width:700px) {
@@ -148,6 +147,7 @@ footer {
         align-items: center;
     }
     .header-item {
+
     }
 
 }
