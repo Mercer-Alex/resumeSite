@@ -20,7 +20,7 @@ body {
 }
 header {
     background: #82ada9;
-    text-align: center;
+    justify-content: start;
 
 }
 h1 {
@@ -56,17 +56,17 @@ h3 {
 }
 /*header*/
 .header-container {
+    max-width: 900px;
+    width: 85%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
 }
 .header-item {
-    flex: 1 1 auto;
+    padding: 10px;
+    flex:  1 0 350px;
 }
 .header-item img {
-    max-width: 350px;
-    width: 85%;
+    max-width: 325px;
 }
 
 /*education*/
@@ -95,9 +95,6 @@ h3 {
     background: #e8eaff;
 }
 
-.work-summary {
-    padding-top: 10px;
-}
 /*footer*/
 footer {
     background: #82ada9;
@@ -118,9 +115,15 @@ footer {
     color: #b2dfdb;
 }
 
+@media screen and (min-width: 500px) {
+
+}
 @media screen and (min-width:700px) {
     footer {
         text-align: center;
+    }
+    .school-date {
+        justify-content: space-between;
     }
 
     .work-item {
@@ -128,8 +131,16 @@ footer {
         grid-template-columns: 1fr 2fr;
         column-gap: 10px;
     }
+    .work-summary {
+        padding-top: 10px;
+    }
     .footer-container {
+        justify-content: space-evenly;
+    }
+    .header-container {
+        flex-wrap: nowrap;
         justify-content: center;
+        margin: auto;
     }
 
 }
