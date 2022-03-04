@@ -41,7 +41,7 @@ h3 {
 }
 .divider > section {
     border-bottom: 1px dashed #b6b8c3;
-    padding: 25px 0;
+    padding-bottom: 25px;
 }
 .divider > section:last-of-type {
     border-bottom: none;
@@ -66,7 +66,7 @@ h3 {
 }
 
 .header-item {
-    padding: 10px;
+    padding: 15px;
 }
 
 
@@ -78,6 +78,7 @@ h3 {
     display: flex;
     border-bottom: dashed 1px;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .school-date h3 ~ p {
@@ -116,13 +117,20 @@ footer {
     color: #b2dfdb;
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 419px){
+     #BYU {
+         margin-top: 0;
+     }
+
+}
+
+@media screen and (max-width:700px) {
     .header-item {
         flex: 1 0 350px;
     }
 
 }
-@media screen and (min-width:700px) {
+@media screen and (min-width:701px) {
     footer {
         text-align: center;
     }
@@ -146,9 +154,5 @@ footer {
         padding: 0;
         align-items: center;
     }
-    .header-item {
-
-    }
-
 }
 
